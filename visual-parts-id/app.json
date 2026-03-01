@@ -1,0 +1,40 @@
+{
+  "expo": {
+    "name": "Visual Parts ID",
+    "slug": "visual-parts-id",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#1A1A1A"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app needs camera access to photograph broken machinery parts for identification."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#1A1A1A"
+      },
+      "permissions": [
+        "CAMERA"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow Visual Parts ID to access your camera for part identification."
+        }
+      ],
+      "expo-asset",
+      "expo-font"
+    ]
+  }
+}

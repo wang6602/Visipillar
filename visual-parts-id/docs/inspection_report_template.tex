@@ -1,0 +1,83 @@
+\documentclass[9pt]{article}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{tabularx}
+\usepackage{amssymb}
+\usepackage{array}
+
+\begin{document}
+
+\renewcommand{\arraystretch}{1.05}
+
+% consistent blank field height
+\newcommand{\entryrule}{\rule[-0.1cm]{0pt}{0.45cm}}
+\newcommand{\entrybox}{\framebox[\linewidth]{\entryrule}}
+
+% ---- HEADER (stretches across full text width) ----
+\noindent
+{\setlength{\tabcolsep}{3pt}%
+\begin{tabularx}{\textwidth}{@{}
+    >{\bfseries}p{3.3cm} X
+    >{\bfseries}p{0.9cm} X
+    >{\bfseries}p{0.9cm} X
+    >{\bfseries}p{2.3cm} X
+@{}}
+Operator/Inspector & \entrybox &
+Date & \entrybox &
+Time & \entrybox &
+Machine Hours & \entrybox
+\end{tabularx}
+}
+
+\vspace{0.15cm}
+
+\noindent
+{\setlength{\tabcolsep}{3pt}%
+\begin{tabularx}{\textwidth}{@{} >{\bfseries}p{3.3cm} X @{}}
+Serial Number & \entrybox
+\end{tabularx}
+}
+
+\vspace{0.2cm}
+
+\noindent
+\begin{tabularx}{\textwidth}{|>{\raggedright\arraybackslash}p{4.8cm}|c|>{\raggedright\arraybackslash}p{4.8cm}|c|>{\raggedright\arraybackslash}X|}
+\hline
+\textbf{What are you inspecting?} & \checkmark & \textbf{What are you looking for?} & \checkmark & \textbf{Evaluator Comments} \\ \hline
+\multicolumn{5}{|p{\dimexpr\textwidth-2\tabcolsep-2\arrayrulewidth}|}{\small For more information, please refer to the Operation and Maintenance Manual or any other applicable manuals and instructions for this product. If you have questions, please contact your local Caterpillar dealer.} \\ \hline
+\multicolumn{5}{|l|}{\textbf{FROM THE GROUND}} \\ \hline
+Overall Machine & & Loose Or Missing Nuts \& Bolts, Loose Guards, Cleanliness & & \\ \hline
+Lights & & Broken lamps, lenses, operation & & \\ \hline
+Grab Irons, Steps, Handholds & & Condition And Cleanliness & & \\ \hline
+Brakes, Suspension & & Leaks, Damage, Wear & & \\ \hline
+Tires, rims, hub, stem caps & & Inflation, Leaks, Damage, Wear & & \\ \hline
+Underneath Machine & & Leaks, Damage, People Working & & \\ \hline
+Steering hydraulic system & & Leaks, worn hoses, damaged lines & & \\ \hline
+Body & & Damage, wear, distortion & & \\ \hline
+Fuel tank, hydraulic tank & & Level, Leaks & & \\ \hline
+Transmission Oil level & & Fluid level & & \\ \hline
+Suspension Cylinders & & Leaks, Measure cylinder height & & \\ \hline
+Frame \& Hoist Cylinders & & Cracks, Leaks, Damage, Wear & & \\ \hline
+All Axles & & Leaks, Damage, Wear & & \\ \hline
+Welds, castings; mounting bolts and pads & & Cracks; damaged bolts or pads & & \\ \hline
+\multicolumn{5}{|l|}{\textbf{ENGINE COMPARTMENT}} \\ \hline
+Engine Oil & & Fluid Level & & \\ \hline
+Engine Coolant & & Fluid Level & & \\ \hline
+All Hoses & & Cracks, Wear Spots, Leaks & & \\ \hline
+All Belts & & Tightness, Wear, Cracks & & \\ \hline
+Overall Engine Compartment & & Trash Or Dirt Buildup, Leaks & & \\ \hline
+Windshield Wipers \& Washers & & Wear, Damage, Fluid Level & & \\ \hline
+\multicolumn{5}{|l|}{\textbf{ON THE MACHINE, OUTSIDE THE CAB}} \\ \hline
+Battery Compartment & & Connections, Fluid level & & \\ \hline
+Fire Extinguisher & & Charge, Damage & & \\ \hline
+Air Filter & & Restriction Indicator & & \\ \hline
+\multicolumn{5}{|l|}{\textbf{INSIDE THE CAB}} \\ \hline
+Gauges, lights, switches & & Damage, operation & & \\ \hline
+Seat & & Adjustment, Brake Travel & & \\ \hline
+Seat Belt, Buckle \& Mounting & & Damage, Wear, Adjustment & & \\ \hline
+Horn, backup alarm, lights & & Proper Function & & \\ \hline
+Windows and Mirrors & & Condition, clean, adjust & & \\ \hline
+ROPS & & Damage & & \\ \hline
+Overall Cab Interior & & Cleanliness & & \\ \hline
+\end{tabularx}
+
+\end{document}
